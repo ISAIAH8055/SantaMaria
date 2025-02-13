@@ -3,54 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Santa Maria, California</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Welcome to Santa Maria, California!</h1>
+        <p>A beautiful city with a rich history.</p>
     </header>
 
-    <section class="intro">
-        <h2>About Santa Maria</h2>
-        <p>
-            Santa Maria is a vibrant city located in the Central Coast of California. Known for its rich agricultural history, this charming town is famous for its wine country, beautiful landscapes, and a welcoming community. Santa Maria serves as the economic and cultural hub of the region, attracting both tourists and residents alike.
-        </p>
-    </section>
-
-    <section class="history">
+    <section id="history">
         <h2>History of Santa Maria</h2>
-        <p>
-            The history of Santa Maria dates back to the Chumash Native American people, who originally inhabited the region. It was later settled by Spanish explorers in the 18th century. Over time, the town grew with the establishment of agriculture, particularly the development of the Santa Maria Valley wine industry. Today, the city is a thriving part of California’s Central Coast, maintaining its historical roots while embracing modern growth.
-        </p>
+        <p>Santa Maria, established in the early 1800s, has grown into a bustling city known for its agricultural roots, particularly in the fields of strawberries and wine production. The city's location in the Central Coast of California has contributed to its success as a regional hub of commerce.</p>
+        <p>Over time, Santa Maria has expanded from a small settlement to a city with a rich cultural heritage and a diverse population. The city is also known for its iconic BBQ style, Santa Maria-style tri-tip, and its annual festivals.</p>
+        <img src="images/santa-maria1.jpg" alt="Santa Maria Landscape" width="500">
+        <img src="images/santa-maria2.jpg" alt="Santa Maria City" width="500">
     </section>
 
-    <section class="survey">
-        <h2>Survey: Your Thoughts on Santa Maria</h2>
-        <p>Please fill out this survey to share your thoughts about Santa Maria.</p>
-        <form action="#" method="post">
-            <label for="name">Your Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+    <section id="survey">
+        <h2>Take Our Survey!</h2>
+        <form id="surveyForm">
+            <label for="name">What is your name?</label>
+            <input type="text" id="name" name="name" required><br>
 
-            <label for="experience">How would you rate your experience in Santa Maria?</label><br>
-            <input type="radio" id="excellent" name="experience" value="Excellent">
-            <label for="excellent">Excellent</label><br>
-            <input type="radio" id="good" name="experience" value="Good">
-            <label for="good">Good</label><br>
-            <input type="radio" id="fair" name="experience" value="Fair">
-            <label for="fair">Fair</label><br>
-            <input type="radio" id="poor" name="experience" value="Poor">
-            <label for="poor">Poor</label><br><br>
+            <label for="visit">Have you visited Santa Maria?</label>
+            <select id="visit" name="visit">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
 
-            <label for="comments">Additional Comments:</label><br>
-            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            <label for="opinion">What do you think of Santa Maria?</label><br>
+            <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea><br>
 
             <input type="submit" value="Submit">
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Santa Maria, California | All Rights Reserved</p>
+        <p>&copy; 2025 Santa Maria Website</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
